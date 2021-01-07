@@ -44,7 +44,7 @@ function submit(values, method) {
 }
 
 export function showUpdate(employees) {
-    return [ 
+    return [
         showTabs('tabUpdate'),
         selectTab('tabUpdate'),
         initialize('employeesForm', employees)
@@ -52,7 +52,7 @@ export function showUpdate(employees) {
 }
 
 export function showDelete(employees) {
-    return [ 
+    return [
         showTabs('tabDelete'),
         selectTab('tabDelete'),
         initialize('employeesForm', employees)

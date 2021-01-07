@@ -25,7 +25,7 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
-        new ExtractTextPlugin('app.css')
+        new ExtractTextPlugin('app.css'),
     ],
     module: {
         loaders: [{
@@ -34,7 +34,6 @@ module.exports = {
             exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
-                plugins: ['transform-object-rest-spread']
             }
         }, {
             test: /\.css$/,

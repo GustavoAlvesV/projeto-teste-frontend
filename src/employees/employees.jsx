@@ -13,7 +13,7 @@ import TabsContent from '../common/tab/tabsContent'
 import Form from './employeesForm'
 import Import from './employeesImport'
 
-import { init, create, update, remove }  from './employeesActions'
+import { init, importCsv, create, update, remove }  from './employeesActions'
 
 import List from './employeesList'
 
@@ -36,7 +36,7 @@ class Employees extends Component {
                             <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader> 
                         <TabsContent> 
-                            <Import onSubmit={this.props.import} submitLabel="Importar"
+                            <Import onSubmit={this.props.importCsv} submitLabel="Importar"
                             submitClass='primary'>
                             </Import>
 
