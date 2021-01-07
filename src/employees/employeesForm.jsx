@@ -10,7 +10,6 @@ class EmployeesForm extends Component {
 
     render() {
         const { handleSubmit, readOnly } = this.props
-
         return (
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>

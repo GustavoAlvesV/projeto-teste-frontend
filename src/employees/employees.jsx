@@ -67,5 +67,5 @@ class Employees extends Component {
 }
  
 const mapDispatchToProps = dispatch => bindActionCreators({
-    init, create,update, remove}, dispatch)
+    init, importCsv, create,update, remove}, dispatch)
 export default connect(null, mapDispatchToProps)(Employees)

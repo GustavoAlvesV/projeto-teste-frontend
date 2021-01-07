@@ -25,6 +25,10 @@ export function remove(values) {
     return submit(values, 'delete')
 }
 
+export function importCsv(values) {
+    return submit(values, 'post')
+}
+
 function submit(values, method) {
     return dispatch => {
         const id = values.id ? values.id : ''

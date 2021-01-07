@@ -14,13 +14,12 @@ class EmployeesImport extends Component {
         return (
             <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
-                    <InputFile  cols='12 4'  />
+                    <InputFile  name="" cols='12 4'  />
                 </div>
                 <div className='box-footer'>
-                    <button type='submit' className={`btn btn-${this.props.submitClass}`}>
+                    <button type='submit' name="employeesImport" className={`btn btn-${this.props.submitClass}`}>
                         {this.props.submitLabel}
                     </button>
-
                 </div>
             </form>
         )
@@ -28,7 +27,7 @@ class EmployeesImport extends Component {
 }
 
 EmployeesImport = reduxForm({form: 'employeesImport', destroyOnUnmount: false})(EmployeesImport)
-
+//const selector = formValueSelector('employeesImport')
 const mapDispatchToProps = dispatch => bindActionCreators({init}, dispatch)
-
 export default connect(null, mapDispatchToProps)(EmployeesImport)
+//export default connect(selector, mapDispatchToProps)(EmployeesImport)
