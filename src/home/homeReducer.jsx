@@ -1,11 +1,10 @@
-const INITIAL_STATE = {summary: {credit: 0, debt: 0}}
+const INITIAL_STATE = {list: []}
 
-export default function(state = INITIAL_STATE, action) {
+export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'SUCCESS_HOME':
-            return { ...state, summary: action.payload.data }
+            return { ...state, list: action.payload.data }
         default:
-            console.log(state)
             return state
     }
 }

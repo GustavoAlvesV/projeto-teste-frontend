@@ -11,6 +11,7 @@ import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
 import TabsContent from '../common/tab/tabsContent'
 import Form from './employeesForm'
+import Import from './employeesImport'
 
 import { init, create, update, remove }  from './employeesActions'
 
@@ -35,6 +36,10 @@ class Employees extends Component {
                             <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader> 
                         <TabsContent> 
+                            <Import onSubmit={this.props.import} submitLabel="Importar"
+                            submitClass='primary'>
+                            </Import>
+
                             <TabContent id='tabList'>
                                 <List />
                             </TabContent>

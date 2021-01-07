@@ -6,6 +6,7 @@ import CustomersReducer from '../customers/customersReducer'
 import EmployeesReducer from '../employees/employeesReducer'
 import ServicesReducer from '../services/servicesReducer'
 import TabReducer from '../common/tab/tabReducer'
+import AuthReducer from '../auth/authReducer'
 
 const rootReducer = combineReducers({
     toastr: toastrReducer,
@@ -13,7 +14,8 @@ const rootReducer = combineReducers({
     employeesCycle: EmployeesReducer,
     servicesCycle:  ServicesReducer,
     form: formReducer,
-    tab: TabReducer
+    tab: TabReducer,
+    auth: AuthReducer
 })
 
 export default rootReducer

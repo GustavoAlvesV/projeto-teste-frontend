@@ -3,11 +3,10 @@ import ContentHeader from '../common/template/contentHeader'
 import React, { Component } from 'react'
 import ValueBox from  '../common/widget/valueBox'
 import Row from  '../common/layout/row'
+
  
 class Home extends Component {
- 
-   
-   
+
     constructor(props) {
         super(props)
         this.state = { credit: 0, debt: 0 }
@@ -21,7 +20,7 @@ class Home extends Component {
         const { credit, debt } = this.state
         return (
             <div> 
-                <ContentHeader title='Dashboard' small='Versão 2.0' />
+                <ContentHeader title='Serviços' small='Disponíveis' />
                 <Content>
                     <Row> 
                         <ValueBox cols='12 4' color='green' icon='bank'
